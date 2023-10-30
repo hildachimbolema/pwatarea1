@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+<style>
+.position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.slider {
+    background-image: url(images/slider1.jpg);
+    background-size: cover;
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+    animation: animate 10s infinite;
+
+}
+@keyframes animate {
+    20%{
+        background-image: url(images/slider4.jpg);
+        background-size: cover;
+    }
+    40%{
+        background-image: url(images/slider3.jpg);
+        background-size: cover;
+    }
+    60%{
+        background-image: url(images/slider2.jpg);
+        background-size: cover;
+    }
+    80%{
+        background-image: url(images/slider1.jpg);
+        background-size: cover;
+    }
+}
+</style>
+</head>
+<body>
+    <h2>Slider Automático con HTML & CSS</h2>
+    <div class="slider-container">
+        <div class="slider position"></div>
+    </div>
+</body>
+</html>
